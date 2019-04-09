@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+
+$colors: (
+  background: #ffba1a,
+  drumBorder: whitesmoke,
+  primaryColor: #63ff15,
+  textColor: whitesmoke,
+  buttonColor: black
+);
+
+@function colors($color-name) {
+  @return map-get($colors, $color-name)
+};
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  @extend .flex;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Allerta Stencil', sans-serif;
+  background-image: url('https://i2.wp.com/drummagazine.com/wp-content/uploads/2016/03/drums-2599508_1280.jpg?resize=759%2C500');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.drumKitBorder {
+  border-radius: 41px 5px 42px 5px;
+  border: 5px solid colors(drumBorder);
+}
+
+.buttonBorder {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid colors(drumBorder);
+  box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.75);
+}
+
+#display {
+  @extend .drumKitBorder;
+ height: 750px;
+ width: 650px;
+ background-color: colors(background);
+  .row {
+    margin: 30px;
+    .col {
+      @extend .flex;
+      color: colors(textColor);
+      .drum-pad {
+        @extend .flex;
+        @extend .buttonBorder;
+        height: 125px;
+        width: 150px;
+        background-color: colors(buttonColor);
+        }
+    }
+  }
+}
+

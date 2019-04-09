@@ -1,26 +1,68 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+        <div id="drum-machine">
+          <div id="display">
+            <h1>BOOM CH BOOM-BOOM CH</h1>
+            <div className="row">
+              <div className="col">
+                <div className="drum-pad">
+                  <p>Q</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="drum-pad">
+                  <p>W</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="drum-pad">
+                  <p>E</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="drum-pad">
+                  <p>A</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="drum-pad">
+                  <p>D</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="drum-pad">
+                  <p>F</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="drum-pad">
+                  <p>Z</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="drum-pad">
+                  <p>X</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="drum-pad">
+                  <p>C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </React.Fragment>
     );
   }
 }

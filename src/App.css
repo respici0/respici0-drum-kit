@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
+.flex, #root, #display .row .col, #display .row .col .drum-pad {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#root {
+  height: 100vh;
+  text-align: center;
+  font-family: 'Allerta Stencil', sans-serif;
+  background-image: url("https://i2.wp.com/drummagazine.com/wp-content/uploads/2016/03/drums-2599508_1280.jpg?resize=759%2C500");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drumKitBorder, #display {
+  border-radius: 41px 5px 42px 5px;
+  border: 5px solid whitesmoke;
 }
+
+.buttonBorder, #display .row .col .drum-pad {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid whitesmoke;
+  -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+#display {
+  height: 750px;
+  width: 650px;
+  background-color: #ffba1a;
+}
+
+#display .row {
+  margin: 30px;
+}
+
+#display .row .col {
+  color: whitesmoke;
+}
+
+#display .row .col .drum-pad {
+  height: 125px;
+  width: 150px;
+  background-color: black;
+}
+/*# sourceMappingURL=App.css.map */
