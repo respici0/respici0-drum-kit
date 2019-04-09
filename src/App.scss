@@ -62,3 +62,19 @@ $colors: (
   }
 }
 
+.footer {
+  font-size: 0.9em;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: colors(background);
+  a {
+    color: colors(textColor);
+    &:hover {
+      text-decoration: none;
+      color: colors(textColor);
+      font-size: 15px;
+    }
+  }
+}
+

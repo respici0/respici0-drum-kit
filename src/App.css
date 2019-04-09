@@ -55,4 +55,22 @@
   width: 150px;
   background-color: black;
 }
+
+.footer {
+  font-size: 0.9em;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #ffba1a;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+}
 /*# sourceMappingURL=App.css.map */
