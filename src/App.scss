@@ -41,7 +41,7 @@ $colors: (
   box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.75);
 }
 
-#display {
+#drum-machine {
   @extend .drumKitBorder;
  height: 750px;
  width: 650px;
@@ -78,3 +78,9 @@ $colors: (
   }
 }
 
+@media screen and (max-width: 650px) {
+    #drum-machine {
+      transform: scale(0.5)
+    }
+    
+   }
