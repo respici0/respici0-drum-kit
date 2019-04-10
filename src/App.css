@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
-.flex, #root, #drum-machine .row .col, #drum-machine .row .col .drum-pad {
+.flex, #root, #drum-machine .row .col, #drum-machine .row .col .drum-pad, .pressed, #display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@
   border: 5px solid whitesmoke;
 }
 
-.buttonBorder, #drum-machine .row .col .drum-pad {
+.buttonBorder, #drum-machine .row .col .drum-pad, .pressed {
   border-radius: 10px 10px 10px 10px;
   border: 1px solid whitesmoke;
   -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
@@ -54,6 +54,19 @@
   height: 125px;
   width: 150px;
   background-color: black;
+}
+
+.pressed {
+  height: 115px;
+  width: 135px;
+  background-color: grey;
+}
+
+#display {
+  border: 1px solid black;
+  height: 5%;
+  width: 25%;
+  background-color: whitesmoke;
 }
 
 .footer {

@@ -62,6 +62,22 @@ $colors: (
   }
 }
 
+.pressed {
+@extend .flex;
+@extend .buttonBorder;
+height: 115px;
+width: 135px;
+background-color:grey;
+}
+
+#display {
+  @extend .flex;
+  border: 1px solid colors(buttonColor);
+  height: 5%;
+  width: 25%;
+  background-color: whitesmoke;
+}
+
 .footer {
   font-size: 0.9em;
   display: block;
